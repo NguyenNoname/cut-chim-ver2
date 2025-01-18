@@ -3,7 +3,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Cut Chim Hub",
+    Title = "Cụt Chim Hub",
     SubTitle = "Blox Kid",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
@@ -2178,7 +2178,7 @@ end
         return tweenfunc
     end
 
---select weapon
+--Chọn Đồ
 function EquipTool(ToolSe)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
 			local tool = game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe)
@@ -2187,7 +2187,7 @@ function EquipTool(ToolSe)
 		end
 	end
     
-    --aimbot mastery
+    --🎯Tự động aimbot🎯
 
 	spawn(function()
 		local gg = getrawmetatable(game)
@@ -2215,7 +2215,7 @@ function EquipTool(ToolSe)
 		  return old(...)
 		  end)
         end)
---Equip Gun
+--Trang bị Súng
 spawn(function()
   pcall(function()
     while task.wait() do
@@ -2322,7 +2322,7 @@ spawn(function()
         wait(1)
     end
 end)
---auto turn haki
+--Tự động bật haki
   function AutoHaki()
     if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("HasBuso") then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso")
@@ -5526,7 +5526,7 @@ spawn(function()
 end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
---RaceV4
+--Tộc V4
 
 
 Tabs.Race:AddButton({
@@ -5561,7 +5561,7 @@ local Mastery = Tabs.Race:AddSection("Auto Race")
 
 Tabs.Race:AddButton({
     Title = "Cửa bật tộc up v4",
-    Description = "",
+    Description = "Cứ thế mà up v4",
     Callback = function()
         Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875) 
         wait(0.1)
@@ -5988,8 +5988,8 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Hop Server",
-	Description = "",
+	Title = "Đổi Server",
+	Description = "đổi sv nếu thích",
 	Callback = function()
 		Hop()
 	end
@@ -6092,7 +6092,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = " Màu Haki Menu",
+	Title = " Menu Màu Haki ",
 	Description = "Sơn skin tăng damamge",
 	Callback = function()
 		game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
@@ -6102,7 +6102,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = " Tên Title Menu",
+	Title = " Menu Tên Title ",
 	Description = "Xem sex",
 	Callback = function()
 		local args = {
